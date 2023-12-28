@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEBGIS실습-동적구글지도 </title>
+    <style>
+	html, body, #map {
+	height: 100%;
+	}
+     </style>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT7sSTMO5sgyqu_1l0KuaIK_QAyv0U44c&callback=f1" async defer>
+	</script>
+
+	<script type=text/javascript>
+      var map;
+      function f1() {
+			map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 37.449378, lng: 126.657171},
+          zoom: 18,
+		  mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="map"></div>
+  </body>
+</html>

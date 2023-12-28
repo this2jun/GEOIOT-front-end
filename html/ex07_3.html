@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <style>
+         .icon{display:block}
+        .bg-header_1 {
+            width: 62px; height: 32px;
+            background: url('./img/css_sprites.png') -1px -1px;
+        }
+        .bg-header_2 {
+            width: 32px; height: 32px;
+            background: url('./img/css_sprites.png') -65px -1px;
+        }
+    </style>
+    <style>
+       #{margin:0 ; padding: 0px;}
+      #main_header{
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        background:url("./img/header_3.png");
+        position: relative;
+      }
+      #main_header >h1{color:white}
+      .bg-header_1{
+          position:absolute;
+          left:5px; top: 7px;
+      }
+      .bg-header_2{
+          position:absolute;
+          right:5px; top: 7px;
+      }
+    </style>
+    <style>
+        table{width: 100%; border-bottom: 1px solid black;}
+        td{text-align: center;}
+        td>a{
+            display:block;
+            height: 35px;
+            text-decoration: none;
+            color: black
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="main_header">
+            <i class="icon bg-header_1"></i>
+            <h1>모바일</h1>
+            <i class="icon bg-header_2"></i>
+        </div>
+        <table>
+            <th>
+                <td><a href="">버튼</a></td>
+                <td><a href="">버튼</a></td>
+                <td><a href="">버튼</a></td>
+                <td><a href="">버튼</a></td>
+                <td><a href="">버튼</a></td>
+            </th>
+        </table>
+    </div>
+</body>
+</html>

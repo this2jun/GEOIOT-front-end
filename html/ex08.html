@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Helvetica', sans-serif;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>유동 레이아웃 구성하기</h1>
+    <style>
+      .header {
+        height: 60px;
+        line-height: 60px;
+        padding-left: 20px;
+        border-bottom: 1px solid black;
+        background: #1D4088;
+      }
+    </style>
+  </div>
+
+  <div class="wrap">
+    <div class="aside">
+      <p>Anim quis pariatur fugiat magna ipsum dolore culpa aute laboris quis minim officia velit consectetur. Deserunt est esse aute cupidatat amet esse in fugiat. Reprehenderit elit officia velit Lorem consectetur amet ullamco elit mollit et.</p>
+      <p>Anim quis pariatur fugiat magna ipsum dolore culpa aute laboris quis minim officia velit consectetur. Deserunt est esse aute cupidatat amet esse in fugiat. Reprehenderit elit officia velit Lorem consectetur amet ullamco elit mollit et.</p>
+    </div>  
+
+    <div class="section">
+      <div class="inner-section">
+        <h1>학과공지</h1>
+        <p>Incididunt et aliqua elit id culpa. Nisi quis minim incididunt Lorem nisi pariatur ut reprehenderit velit veniam duis veniam aliqua. Occaecat dolore qui deserunt id nulla tempor commodo voluptate velit deserunt elit ea. Irure irure aliqua commodo qui elit aliquip qui sint veniam. Laboris in reprehenderit eu cillum do non mollit consectetur quis id.</p>
+        <p>Ipsum duis tempor nulla proident cupidatat. Consectetur deserunt occaecat non incididunt commodo quis duis deserunt dolor. Eiusmod ullamco minim quis consequat deserunt laborum ad enim elit ad nulla. Occaecat cupidatat ea anim magna ullamco laborum Lorem nisi et aute aliquip. Ullamco nisi et occaecat officia pariatur non eiusmod.        </p>
+        <h1>채용공지</h1>
+        <p>Incididunt et aliqua elit id culpa. Nisi quis minim incididunt Lorem nisi pariatur ut reprehenderit velit veniam duis veniam aliqua. Occaecat dolore qui deserunt id nulla tempor commodo voluptate velit deserunt elit ea. Irure irure aliqua commodo qui elit aliquip qui sint veniam. Laboris in reprehenderit eu cillum do non mollit consectetur quis id.</p>
+        <p>Ipsum duis tempor nulla proident cupidatat. Consectetur deserunt occaecat non incididunt commodo quis duis deserunt dolor. Eiusmod ullamco minim quis consequat deserunt laborum ad enim elit ad nulla. Occaecat cupidatat ea anim magna ullamco laborum Lorem nisi et aute aliquip. Ullamco nisi et occaecat officia pariatur non eiusmod.        </p>
+        <p>Ipsum duis tempor nulla proident cupidatat. Consectetur deserunt occaecat non incididunt commodo quis duis deserunt dolor. Eiusmod ullamco minim quis consequat deserunt laborum ad enim elit ad nulla. Occaecat cupidatat ea anim magna ullamco laborum Lorem nisi et aute aliquip. Ullamco nisi et occaecat officia pariatur non eiusmod.        </p>
+        <p>Ipsum duis tempor nulla proident cupidatat. Consectetur deserunt occaecat non incididunt commodo quis duis deserunt dolor. Eiusmod ullamco minim quis consequat deserunt laborum ad enim elit ad nulla. Occaecat cupidatat ea anim magna ullamco laborum Lorem nisi et aute aliquip. Ullamco nisi et occaecat officia pariatur non eiusmod.        </p>
+        <p>Ipsum duis tempor nulla proident cupidatat. Consectetur deserunt occaecat non incididunt commodo quis duis deserunt dolor. Eiusmod ullamco minim quis consequat deserunt laborum ad enim elit ad nulla. Occaecat cupidatat ea anim magna ullamco laborum Lorem nisi et aute aliquip. Ullamco nisi et occaecat officia pariatur non eiusmod.        </p>
+        <p>Ipsum duis tempor nulla proident cupidatat. Consectetur deserunt occaecat non incididunt commodo quis duis deserunt dolor. Eiusmod ullamco minim quis consequat deserunt laborum ad enim elit ad nulla. Occaecat cupidatat ea anim magna ullamco laborum Lorem nisi et aute aliquip. Ullamco nisi et occaecat officia pariatur non eiusmod.        </p>
+        <p>Ipsum duis tempor nulla proident cupidatat. Consectetur deserunt occaecat non incididunt commodo quis duis deserunt dolor. Eiusmod ullamco minim quis consequat deserunt laborum ad enim elit ad nulla. Occaecat cupidatat ea anim magna ullamco laborum Lorem nisi et aute aliquip. Ullamco nisi et occaecat officia pariatur non eiusmod.        </p>
+        <p>Ipsum duis tempor nulla proident cupidatat. Consectetur deserunt occaecat non incididunt commodo quis duis deserunt dolor. Eiusmod ullamco minim quis consequat deserunt laborum ad enim elit ad nulla. Occaecat cupidatat ea anim magna ullamco laborum Lorem nisi et aute aliquip. Ullamco nisi et occaecat officia pariatur non eiusmod.        </p>
+
+      </div>  
+    </div>
+  </div>
+  <style>
+    .header{
+      position:fixed;
+      left:0;
+      right:0;
+      }
+      .wrap{
+        padding-top: 80px;
+      }
+  </style>
+  <style>
+      .wrap{
+        overflow: hidden;
+      }
+      .aside{
+        float:left;
+        width: 200px;;
+      }
+      .section{
+        float:left;
+        width: 100% ;               /* 너비 유동 */
+        margin-right: -200px;     /* 수평 구성*/
+      }
+      .inner-section{
+        padding-right: 200px;
+      }
+      body{
+        min-width: 600px;
+      }
+  </style>
+</body>
+
+</html>

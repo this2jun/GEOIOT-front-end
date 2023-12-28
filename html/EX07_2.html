@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+    <style>
+        input{display:none}
+        input:nth-of-type(1)~div:nth-of-type(1){
+            display:none
+        }
+        input:nth-of-type(2)~div:nth-of-type(2){
+            display:none
+        }
+
+        input:nth-of-type(1):checked~div:nth-of-type(1){
+            display:block
+        }
+
+        input:nth-of-type(2):checked~div:nth-of-type(2){
+            display:block
+        }
+
+    </style>
+<body>
+    <label for="tab-1">조회수가 많은 표제어 || </label>
+    <label for="tab-2">신규 표제어 </label>
+
+    <input type="radio" name="tab" id="tab-1" checked = checked>
+    <input type="radio" name="tab" id="tab-2">
+    <div class="tab-item">div첫번째내용: Voluptate anim ea velit proident. Elit officia ad culpa do fugiat eiusmod dolore sunt anim consectetur excepteur duis do. Est in culpa dolor cupidatat reprehenderit sit sunt cillum. Sint ullamco quis sint ipsum magna proident mollit laboris aliquip aliquip laborum. Qui cupidatat eiusmod incididunt do. Eu laborum mollit enim aliqua tempor laborum ullamco esse ipsum. In sunt consequat consectetur tempor dolor reprehenderit est et consequat consequat esse sunt magna.</div>
+    <div class="tab-item">div두번째내용: Ipsum qui est et mollit occaecat proident dolor ipsum labore laboris aliqua. Eiusmod ipsum irure id et velit reprehenderit ex occaecat incididunt Lorem velit aliqua. Irure magna officia aute id reprehenderit. Enim velit Lorem pariatur incididunt ex nostrud dolor. Irure nisi adipisicing ullamco commodo ut deserunt magna fugiat anim occaecat amet.</div>
+
+</body>
+</html>
